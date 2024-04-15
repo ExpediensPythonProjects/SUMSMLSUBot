@@ -1,0 +1,221 @@
+version: "3.1"
+
+intents:
+  - bot_start_conversation
+  - bot_restart_conversation
+  - bot_exit_conversation
+  - bot_challenge
+  - home
+  - greet
+  - result_related_query
+  - frequently_asked_questions
+  - not_received_registration_id_password
+  - document_required
+  - document_upload_error
+  - payment_confirmation_not_received
+  - extension_of_submission_date
+  - hard_copy
+  - submitting_hard_copy
+  - result_declaration_date
+  - rl_status_result
+  - revaluation_result
+  - supplementary_result
+  - wrong_missing_information_on_result
+
+
+actions: 
+  - action_restart_conversation
+  - action_exit_conversation
+  - action_default_fallback
+
+
+responses:
+
+  utter_bot_start_conversation:
+    - text: "Welcome to SUMSMLSU! I'm Your Virtual Assistant, Here to Help. Please Choose an Option from the Menu Below to Get Started."
+      buttons:
+        - title: "Result Related Query"
+          payload: '/result_related_query'
+        - title: "Frequently Asked Questions"
+          payload: '/frequently_asked_questions'
+
+  utter_bot_restart_conversation:
+    - text: "Welcome to SUMSMLSU! I'm Your Virtual Assistant, Here to Help. Please Choose an Option from the Menu Below to Get Started."
+      buttons:
+        - title: "Result Related Query"
+          payload: '/result_related_query'
+        - title: "Frequently Asked Questions"
+          payload: '/frequently_asked_questions'
+
+  utter_home:
+    - text: "Welcome Back, Please Choose an Option from the Menu Below to Continue."
+      buttons:
+        - title: "Result Related Query"
+          payload: '/result_related_query'
+        - title: "Frequently Asked Questions"
+          payload: '/frequently_asked_questions'
+
+  utter_nlu_fallback:
+  - text: "I Apologize for the Confusion. I'm Here to Assist You with Something Similar To"
+    buttons:
+      - title: "Result Related Query"
+        payload: '/result_related_query'
+      - title: "Frequently Asked Questions"
+        payload: '/frequently_asked_questions'
+
+  utter_greet:
+    - text: "Hello! Nice to have you here. What can I do for you right now?"
+      buttons:
+        - title: "Result Related Query"
+          payload: '/result_related_query'
+        - title: "Frequently Asked Questions"
+          payload: '/frequently_asked_questions'
+
+  utter_bot_challenge:
+    - text: "I am SUMSMLSU! Virtual Assistant. In what manner may I be of service to you?"
+      buttons:
+        - title: "Result Related Query"
+          payload: '/result_related_query'
+        - title: "Frequently Asked Questions"
+          payload: '/frequently_asked_questions'
+
+  utter_result_related_query :
+    - text: "Selet the Related Query"
+      buttons:
+        - title: "Result Declaration Date"
+          payload: 'result_live_date'
+        - title: "RL Status in Result"
+          payload: 'rl_status_result'
+        - title: "Home"
+          payload: '/home'
+
+  utter_frequently_asked_questions :
+    - text: "Select the Related FAQ"
+      buttons:
+        - title: "Registration ID Password Not Received"
+          payload: 'not_received_registration_id_password'
+        - title: "Document Required For Filling Registration Form"
+          payload: 'document_required'
+        - title: "Home"
+          payload: '/home'
+
+  utter_not_received_registration_id_password:
+    - text: |
+        If you haven't received your registration ID and password, here are a few steps you can take:
+          A) Check your email's 'SPAM' folder as sometimes the email might end up there.
+          B) Look for an email with the subject "MLS University Examination Portal Credentials" as it will contain your registration ID and password.
+          C) If you still can't find it, reach out to the university helpdesk during working hours. Make sure to provide them with your basic details like your name, father's name, mother's name, mobile number, etc.
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+  utter_document_required:
+    - text: |
+        Candidates need to prepare scanned copies of the following documents for uploading, ensuring that each image size falls within the range of 10 KB to 20 KB:
+          A) Photo
+          B) Signature
+          C) Mark sheets of the last qualifying exams (10th, 12th, UG, PG)
+          D) Migration Certificate
+          E) Domicile Number and Date
+          F) Supporting documents relevant to the capacity under which you are applying, such as:
+            I) Caste Certificate for SC/ST, OBC, MBC.
+            II) Physical Disability Certificate for physically handicapped candidates.
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+  utter_documnet_upload_error:
+    - text: "If you're encountering an error while uploading documents, please ensure that the size of your photo, signature, and any other supporting documents is between 10KB to 20KB. Also, make sure they are in .JPEG or .JPG format. This should help resolve the issue."
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+  utter_payment_confirmation_not_received:
+    - text: |
+        If you haven't received confirmation of your payment:
+        - Wait for 72 hours for the update in the University's account if the money has been deducted from your account.
+        - If after 72 hours the money is credited back into your account, you'll need to fill the online form and pay the fee through the online examination portal again.
+        - If the money doesn't get credited back to your account, submit your request mentioning your Name, User ID, Mobile No., Class, Year, and Date of Payment to the provided email ID: exam section/university helpline
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+  utter_extention_of_submission_date:
+    - text: "Candidates are reminded to submit their online forms and pay the fees before the deadline. Starting the process early is crucial to avoid potential problems like failed payments caused by heavy internet traffic nearing the deadline. Please note that the deadline will not be extended for individuals encountering such issues."
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+  utter_hard_copy:
+    - text: "A Hard Copy means a physical copy or printout of Exam Form."
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+  utter_submitting_hard_copy:
+    - text: "All candidates applying online examination form shall have to mandatorily submit the system generated print out of the form and submit to the College along with supporting documents."
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+  utter_result_declaration_date:
+    - text: "Dear Student regarding result declaration information please check regularly basis on the online portal."
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+
+  utter_rl_status_result:
+    - text: "Please submit an application to the result section with your previous year's grade sheet and a copy of your admit card including the barcode. Once done, your RL status will be removed, and your result will be visible on the portal. Reasons for RL status include missing marks, incorrect paper codes, pending status updates, incorrect carry forward marks, unclear absentee status, missing barcode on admit card, or subject change issues."
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+
+  utter_revaulation_result:
+    - text: "Regarding the Revaluation result, there are some possibilities as to why it may not be showing on the portal. This could be due to a 'NO-CHANGE' case or if your Reval marks have not been received at the result section."
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+
+  utter_supplementary_result:
+    - text: "Regarding the supplementary result, there are some issues currently preventing it from appearing on the portal. This could be due to cases where marks have not been received or incorrect carry forward marks from the previous year."
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+
+  utter_wrong_missing_information_on_result :
+    - text: "As per university process, please submit an application to the Exam section regarding any incorrect data on the grade sheet. Ensure to attach all necessary documents such as grade sheet, admit card, etc. Your issue will be resolved upon completion of this process"
+      buttons:
+        - title: "Home"
+          payload: '/home'
+        - title: "Exit Conversation"
+          payload: '/bot_exit_conversation'
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

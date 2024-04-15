@@ -1,0 +1,146 @@
+version: "3.1"
+
+nlu:
+
+- intent: result_related_query
+  examples: |
+    - /result_related_query
+    - Result Related Query
+
+- intent: frequently_asked_questions
+  examples: |
+    - /frequently_asked_questions
+    - Frequently Asked Questions
+
+- intent: not_received_registration_id_password
+  examples: |
+    - I have not received my registration ID password in my email.
+    - Not received registration ID
+    - registration ID not received
+    - Password not received
+    - Registration ID not received
+    - Did not get password
+    - Did not get registration ID
+    - where is my password
+    - where is my registration ID
+    - not getting password 
+    - not getting registration ID
+
+- intent: document_required
+  examples: |
+    - Which documents will be required for uploading while filling the online examination form for Regular/private candidates? 
+    - documents required for registration
+    - list of documents required for online registration
+    - documents required for online registration
+    - documents required
+    - required documents for online registration 
+    - what are documents required for filling online registration form.
+
+- intent: document_upload_error
+  examples: |
+    - I am not able to upload my photo, signature, thumb impression, and other supporting documents like Caste certificate, etc.
+    - Getting error while uploading documents
+    - error while uploading photo
+    - error while uploading signature
+    - error while uploading thumb impression
+    - error while uploading supporting documents
+
+- intent: payment_confirmation_not_received
+  examples: |
+    - My fees have been deducted but I have not received the message of successful payment and exam from hard copy
+    - Money deducted but not received confirmation
+    - Payment successful but no confirmation
+    - Payment done, not received message 
+    - Message not received after making payment
+
+- intent: extension_of_submission_date
+  examples: |
+    - I initiated the fee payment on the last date of the submission of form and fee but due to unsuccessful payment my form could not get submitted to the university? Will my date for form submission be extended
+    - Will there be extension in submission date if payment was unsuccessful
+    - Will there be any extension in submission date ?
+    - Extension in submission date
+
+- intent: hard_copy
+  examples: | 
+    - What do you mean by a hard copy?
+    - What is hard copy?
+    - Hard copy
+
+- intent: submitting_hard_copy
+  examples: |
+    - Where should I have to submit a hard copy of my examination form?
+    - Where to submit hard copy of examination form 
+    - Submit hard copy 
+    - I want to submit hard copy of examination form 
+    - Hard copy submission
+
+- intent: result_declaration_date
+  examples: |
+    - Dear Sir, when will my annual/reval/supplementary/semester/diploma result be live on the portal?
+    - Result Date
+    - Annual Result Declaration Date
+    - Revaluation Result Declaration Date
+    - Result Declaration Date
+    - Semester Result Declaration Date
+    - Diploma Result Declaration Date
+
+- intent: rl_status_result
+  examples: | 
+    - Dear Sir, my result why it is showing RL. What should I do?
+    - Showing RL Status in Result
+    - RL Status on Online Portal
+    - RL Status in Result
+    - Reason for RL Status in Result
+    - Why it's showing RL status in my result 
+    - Reason for RL status
+    - Why it's showing RL status in my result?
+
+- intent: revaluation_result
+  examples: |
+    - Dear Sir, my Revaluation Result is not showing on the portal. What is the reason behind this?
+    - Why my reval result is not showing.
+    - Why my reevaluation result is not showing.
+    - Where to find my reval result.
+    - Can't see my reevaluation result, please help.
+    - How to access my reval result.
+    - Revaluation result
+    - Reval Result not showing 
+    - Still not showing reval result
+    - Why reval result not showing on online portal?
+    - Why my revaluation result is not showing on online portal?
+
+- intent: supplementary_result
+  examples: |
+    - Dear Sir, my Supplementary Result is not showing on the portal. What is the reason behind this?
+    - Why my supplementary result not showing.
+    - I can't find my supplementary result.
+    - Can't access my supplementary result
+    - On the portal, can't find my supplementary result, please help.
+    - Can't see my supplementary result on the portal.
+    - Please tell me where to find my supplementary result
+    - Supplementary result
+
+- intent: wrong_missing_information_on_result
+  examples: |
+    - Dear Sir, on the grade sheet my mother name or father name or enrollment number or college code or mode of examination (HINDI/ENGLISH) is showing wrong. What should I do?
+    - Mother name missing
+    - Father name is wrong
+    - Can't find college code
+    - Why my mother name is wrong 
+    - My enrollment number is missing
+    - Enrollment number is wrong 
+    - Mode of examination is wrong
+    - Father name is missing, what to do?
+    - Showing wrong college code
+    - Dear Sir, on the grade sheet my mode of examination (HINDI/ENGLISH) is showing wrong. What should I do?
+    - Dear Sir, on the grade sheet my college code is showing wrong. What should I do?
+    - Dear Sir, on the grade sheet my enrollment number is showing wrong. What should I do?
+    - On the grade sheet my father name is showing wrong. What should I do?
+    - On the grade sheet my father name is missing. What should I do?
+    - Wrong father name
+    - Wrong college code
+    - Wrong enrollment number
+    - Missing mode of examination
+    - Missing college code
+    - Mother name is missing
+    - Hello Sir, my father name is wrong on the mark sheet

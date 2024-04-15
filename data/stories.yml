@@ -1,0 +1,104 @@
+version: "3.1"
+
+
+stories:
+
+- story: Bot Start Conversation 
+  steps:
+  - intent: bot_start_conversation
+  - action: utter_bot_start_conversation
+
+- story: Bot Restart Conversation
+  steps:
+  - intent: bot_restart_conversation
+  - action: action_restart_conversation
+
+- story: Bot Exit Conversation
+  steps:
+  - intent: bot_exit_conversation
+  - action: action_exit_conversation
+
+- story: Bot Challenge 
+  steps: 
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: Home
+  steps:
+  - intent: home
+  - action: utter_home
+
+- story: Greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Result Related Query 
+  steps:
+  - intent: result_related_query
+  - action: utter_result_related_query
+
+- story: Frequently Asked Question
+  steps:
+  - intent: frequently_asked_questions
+  - action: utter_frequently_asked_questions
+
+- story: Not Received Registration ID/Password
+  steps:
+  - intent: not_received_registration_id_password
+  - action: utter_not_received_registration_id_password
+
+- story: Document Required
+  steps:
+  - intent: document_required
+  - action: utter_document_required
+
+- story: Document Upload Error
+  steps:
+  - intent: document_upload_error
+  - action: utter_documnet_upload_error
+
+- story: Payment Confirmation Not Received
+  steps:
+  - intent: payment_confirmation_not_received
+  - action: utter_payment_confirmation_not_received
+
+- story: Extension of Submission Date
+  steps:
+  - intent: extension_of_submission_date
+  - action: utter_extention_of_submission_date
+
+- story: Hard Copy
+  steps:
+  - intent: hard_copy
+  - action: utter_hard_copy
+
+- story: Submitting Hard Copy 
+  steps:
+  - intent: submitting_hard_copy
+  - action: utter_submitting_hard_copy 
+
+- story: Result Declaration Date 
+  steps:
+  - intent: result_declaration_date
+  - action: utter_result_declaration_date
+
+- story: RL Status Result
+  steps:
+  - intent: rl_status_result
+  - action: utter_rl_status_result
+
+- story: Revaluation Result
+  steps:
+  - intent: revaluation_result
+  - action: utter_revaulation_result
+
+- story: Supplementary Result
+  steps:
+  - intent: supplementary_result
+  - action: utter_supplementary_result
+
+- story: Wrong Missing/Information on Result
+  steps:
+  - intent: wrong_missing_information_on_result
+  - action: utter_wrong_missing_information_on_result

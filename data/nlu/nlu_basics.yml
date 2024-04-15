@@ -1,0 +1,164 @@
+version: "3.1"
+
+nlu:
+
+- intent: bot_start_conversation
+  examples: |
+    - /bot_start_conversation
+    - Bot Start Conversation
+
+- intent: bot_restart_conversation
+  examples: |
+    - /bot_restart_conversation
+    - Bot Restart Conversation
+  
+- intent: bot_exit_conversation
+  examples: |
+    - /bot_exit_conversation
+    - Bot_Exit Conversation
+
+- intent: home
+  examples: |
+    - /home
+    - Home
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hii
+    - good morning
+    - morning
+    - good afternoon
+    - afternoon
+    - good evening
+    - evening
+    - good night
+    - night
+    - how are you
+    - hello there
+    - hey
+    - hey there
+    - hi, how's it going
+    - good day
+    - greetings
+    - what's up
+    - hi, what's new
+    - howdy
+    - hiya
+    - sup
+    - yo
+    - aloha
+    - hi!
+    - hey!
+    - good to see you
+    - hi, friend
+    - hey, how's it going
+    - hi, stranger
+    - hi, friend!
+    - hey, buddy
+    - hi, pal
+    - hey, there!
+    - hi, sunshine
+    - greetings!
+    - hi, how are you?
+    - hey, what's going on?
+    - hi, nice to meet you
+    - hey, nice to see you
+    - hi, it's me
+    - hey, it's been a while
+    - hi, long time no see
+    - greetings, earthling
+    - hi, what's the news
+    - hey, any updates?
+
+- intent: bot_challenge
+  examples: |
+    - Who are you?
+    - Are you a person?
+
+- intent: nlu_fallback
+  examples: |
+    - Missing 
+    - Related Query 
+    - Wrong
+    - Father
+    - Mother
+    - Showing wrong
+    - Name
+    - Father name
+    - Mother name
+    - College code
+    - Enrollment number
+    - Grade sheet
+    - Not Received 
+    - Password
+    - Result
+    - Declaration
+    - Hello, I want to book movie ticket.
+    - Who is owner of 
+    - I want to resign
+    - Supplementary
+    - Salary Credit Date
+    - When will salary be credited 
+    - DSFJGDSKJ
+    - Askdhfsdkj
+    - Fuck You
+    - I love you
+    - Will you marry me
+    - You look sexy 
+    - Am I sexy 
+    - Hello, can you help me with my order?
+    - How can I reach customer support?
+    - What's the weather like today?
+    - I need assistance with a technical issue.
+    - What is the meaning of life?
+    - Tell me a joke.
+    - Frequently asked questions
+    - Can you recommend a good restaurant nearby?
+    - I need information about your company's products.
+    - Who won the latest soccer game?
+    - What's the capital of France?
+    - Explain quantum physics to me.
+    - What is the square root of 144?
+    - Play some music for me.
+    - What's the latest fashion trend?
+    - Help me with my math homework.
+    - Who is the president of the United States?
+    - What's the recipe for chocolate cake?
+    - I need advice on a relationship problem.
+    - How do I change my password?
+    - What's the current exchange rate for dollars to euros?
+    - Recommend a good book to read.
+    - What are the top news headlines today?
+    - Can you sing a song for me?
+    - How do I tie a bowtie?
+    - Tell me a fun fact.
+    - What's the meaning of the word "serendipity"?
+    - Help me plan a vacation.
+    - What's the best way to stay healthy?
+    - Who is your favorite superhero?
+    - What's the largest mammal on Earth?
+    - What's the population of Tokyo?
+    - Explain the concept of artificial intelligence.
+    - What's the best way to learn a new language?
+    - Can you speak any other languages?
+    - Who is the CEO of Google?
+    - What's the distance to the nearest star?
+    - How do I make a perfect cup of coffee?
+    - Recommend a good workout routine.
+    - What's the speed of light?
+    - Who painted the Mona Lisa?
+    - What's the best movie of all time?
+    - How do I create a website?
+    - Can you solve a Rubik's Cube?
+    - What's the meaning of the word "ephemeral"?
+    - How do I grow a garden?
+    - Who wrote the play "Romeo and Juliet"?
+    - What's the most expensive painting ever sold?
+    - Recommend a good podcast to listen to.
+    - How do I meditate?
+    - What's the meaning of the acronym "NASA"?
+    - Can you draw a cat for me?
+    - Who is your favorite historical figure?
+    - What's the recipe for a classic margarita?
